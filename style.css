@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    padding: 1.25rem;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-title,
+.button-select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button-select {
+    width: 350px;
+}
+
+.select {
+    width: 150px;
+}
+
+.logo-title img {
+
+    width: 60px;
+    object-fit: contain;
+}
+
+.button {
+    padding: 5px;
+    border-radius: 15px;
+}
+
+main {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: blueviolet;
+}
+
+.board {
+    display: flex;
+    width: 37.5rem;
+    height: 37.5rem;
+    background-color: crimson;
+    margin: 3.125rem 0 3.125rem;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.cell {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    background-color: gray;
+    border: 1px solid;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.cell.selected {
+    background-color: aqua;
+}
